@@ -1,9 +1,28 @@
-# Core for Unity
+# Json for Unity
 
-This provides fundamental language-level features for all Unity projects.
+This provides Json converter for Unity.
+By default, it uses `UnityEngine.JsonUtility`.
+But it prioritize using such modules first: `Newtonsoft.Json`.
+
+- Features
+
+	```bash
+	- Json serialize (convert C# object to json-string).
+	- Json deserialize (convert json-string to C# object).
+	```
+
+- Dependencies
+
+	```bash
+	# [Option]
+	Newtonsoft.Json
+
+	# Tool.Compet.Core
+	https://github.com/darkcompet/csharp-unity-core
+	```
 
 
-## Quick Start
+## How to install
 
 - Just include it into project by add as git-submodule.
 	
