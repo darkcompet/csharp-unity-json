@@ -1,6 +1,5 @@
-
 namespace Tool.Compet.Json {
-#if HAS_NEWTON
+#if HAS_NEWTONSOFT_JSON
 	using Newtonsoft.Json;
 #else
 	using UnityEngine;
@@ -14,11 +13,11 @@ namespace Tool.Compet.Json {
 	/// - Deserialize large string => Newton is optimal
 	public class DkJsons {
 /// Use Newtonsoft Json
-#if HAS_NEWTON
+#if HAS_NEWTONSOFT_JSON
 		public static string Obj2Json(object serializableObj, Formatting formatting = Formatting.None) {
 			return JsonConvert.SerializeObject(serializableObj, formatting);
 		}
-		
+
 		/// Caller should add `where T : class` to its function to allow return nullable-result.
 		public static T Json2Obj<T>(string json) where T : class {
 			return JsonConvert.DeserializeObject<T>(json);

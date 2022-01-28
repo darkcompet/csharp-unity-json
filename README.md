@@ -2,7 +2,7 @@
 
 This provides Json converter for Unity.
 By default, it uses `UnityEngine.JsonUtility`.
-But it prioritize using such modules first: `Newtonsoft.Json`.
+But it prioritize using `Newtonsoft.Json` first.
 
 - Features
 
@@ -14,7 +14,7 @@ But it prioritize using such modules first: `Newtonsoft.Json`.
 - Dependencies
 
 	```bash
-	# [Option]
+	# [Option] To enable it, should define `HAS_NEWTONSOFT_JSON` in Player's setting section at Unity editor.
 	Newtonsoft.Json
 
 	# Tool.Compet.Core
@@ -28,5 +28,5 @@ But it prioritize using such modules first: `Newtonsoft.Json`.
 	
 	```bash
 	# Tool.Compet.Core
-	git submodule add https://github.com/darkcompet/csharp-unity-core.git
+	git submodule add https://github.com/darkcompet/csharp-unity-json.git
 	```
